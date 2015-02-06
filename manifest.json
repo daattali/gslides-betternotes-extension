@@ -1,0 +1,43 @@
+{
+  "name": "Google Slides BetterNotes",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "The slides thumbnails in the Speaker Notes window of Google Slides are tiny. This extension dynamically resizes the slides to be more readable based on the window size.",
+  "page_action": {
+    "default_icon": "img/icon-48.png",
+    "default_popup": "html/gsbn-popup.html",
+    "default_title": "Google Slides BetterNotes"
+  },
+  "background": {
+    "scripts": [
+      "js/gsbn-background.js",
+      "js/gsbn-common.js"
+    ],
+    "persistent": false
+  },
+  "permissions" : [
+	"declarativeContent",
+    "https://docs.google.com/presentation/*",
+    "storage"
+  ],
+  "icons": {
+    "16": "img/icon-16.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  },
+  "options_page": "html/gsbn-options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://docs.google.com/presentation/*/present*slide*"
+      ],
+      "match_about_blank" : true,
+      "all_frames" : true,
+      "js": [
+        "js/gsbn-common.js",
+        "js/gsbn.js"
+      ]
+    }
+  ],
+  "homepage_url": "https://github.com/daattali/gslides-betternotes-extension"
+}
