@@ -1,0 +1,38 @@
+body {
+  width: 400px;
+  text-align: center;
+}
+
+#gsbn-title {
+  font-size:1.4em;
+}
+
+#gsbn-options {
+  text-align: left;
+}
+
+#gsbn-options input[type=checkbox] {
+  position: relative;
+  top: 2px;
+}
+
+#gsbn-options #width-option {
+  margin: 5px 5px 15px 0;
+  display: inline-block;
+}
+
+#gsbn-footer {
+  margin-top: 7px;
+  position: relative;
+}
+
+#gsbn-copyright {
+  color: #888888;
+  font-size: 1em;
+}
+
+#gsbn-link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: inherit;
+}
