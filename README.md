@@ -8,7 +8,7 @@ _Get the extension at the [Chrome Web Store](TODO)_
 
 ## Description
 
-The slide previews in the Speaker Notes window of Google Slides are tiny and unreadable. This extension dynamically resizes the slides based on the window size.
+The slide previews in the Speaker Notes window of Google Slides are tiny and unreadable. This extension dynamically resizes the slides based on the window size to make them useful.
 
 If you've ever used Google Slides (or MS PowerPoint/anything similar), you may be aware of the Speaker Notes feature - it allows you to view the current and next slides as well as the text notes for the current slide . However, for some weird reason, the Speaker Notes in Google Slides only allocates a very small area for the slides preview, while giving the notes almost all the space. There is no possible way to resize the slide thumbnail, which makes the slide preview almost useless.
 
