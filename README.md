@@ -19,13 +19,15 @@ With this Chrome extension, the slide preview images will be automatically resiz
 
 If you don't have a Google Slides document to experiment with/verify this problem, you can test it out with [this sample Google Slides presentation](https://docs.google.com/presentation/d/18svsKPFNQrBLOSAmOouD410kX9fuaNp3e1K1GTTBLiU/edit?usp=sharing)
 
-Here is a 20-second GIF that shows a demo of this extension:
+Here is a 30-second GIF that shows a demo of this extension:
 
 ![Demo](./img/doc/demo.gif)
 
 ## Motivation
 
+As preparation for my committee meeting, I used Google Slides to make my presentation. Shortly after starting, before havin any actual content in my presentation, I noticed that the Speaker Notes window is basically useless in its current form because of how small the slide previes are. After fiddling with the speaker notes window JavaScript and CSS for a couple hours, I decided that a much better use of my time instead of working on my committee meeting would be to make this extension. I then proceeded to spend the next several hours making the draft version of this extension, and thus successfully procrastinated from my real work for many many hours!
 
+On a more serious note - I do think this is a very essential tool for anyone who uses Google Slides to give presentations.
 
 ## Other extensions
 
@@ -36,5 +38,3 @@ Here is a 20-second GIF that shows a demo of this extension:
 ---
 
 To see my other projects, visit [http://deanattali.com/projects](http://deanattali.com/projects)
-
-
