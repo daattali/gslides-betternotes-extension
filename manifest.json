@@ -2,7 +2,7 @@
   "name": "Google Slides Auto Resize Speaker Notes",
   "version": "0.1.0",
   "manifest_version": 2,
-  "description": "The slides thumbnails in the Speaker Notes window of Google Slides are tiny. This extension dynamically resizes the slides to be more readable based on the window size.",
+  "description": "The slides thumbnails in the Speaker Notes window of Google Slides are tiny. This extension dynamically resizes the slides to be more readable based on the window size to make them useful.",
   "page_action": {
     "default_icon": "img/icon-48.png",
     "default_popup": "html/gsbn-popup.html",
