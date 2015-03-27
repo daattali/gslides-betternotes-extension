@@ -6,7 +6,7 @@
   "page_action": {
     "default_icon": "img/icon-48.png",
     "default_popup": "html/gsbn-popup.html",
-    "default_title": "Google Slides BetterNotes"
+    "default_title": "Google Slides Auto Resize Speaker Notes"
   },
   "background": {
     "scripts": [
