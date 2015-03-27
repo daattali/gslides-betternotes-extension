@@ -3,7 +3,7 @@
 _Dean Attali_    
 _February-March 2015_    
 _Source code available [on GitHub](https://github.com/daattali/gslides-betternotes-extension)_     
-_Get the extension at the [Chrome Web Store](TODO)_  
+_Get the extension at the [Chrome Web Store](https://chrome.google.com/webstore/detail/google-slides-auto-resize/piciggpbidhfbpefjjbomcgomanjfbeb)_  
 
 
 ## Description
