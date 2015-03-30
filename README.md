@@ -1,10 +1,13 @@
 # Google Slides Auto Resize Speaker Notes (Chrome extension)
 
-_Dean Attali_    
+_[Dean Attali](http://deanattali.com)_    
 _February-March 2015_    
 _Source code available [on GitHub](https://github.com/daattali/gslides-betternotes-extension)_     
 _Get the extension at the [Chrome Web Store](https://chrome.google.com/webstore/detail/google-slides-auto-resize/piciggpbidhfbpefjjbomcgomanjfbeb)_  
 
+## Installation
+
+Installation is extremely easy: just go to [the Chrome extension store](https://chrome.google.com/webstore/detail/google-slides-auto-resize/piciggpbidhfbpefjjbomcgomanjfbeb) and click on the "Add to Chrome" button.
 
 ## Description
 
@@ -29,9 +32,11 @@ As preparation for my committee meeting, I used Google Slides to make my present
 
 On a more serious note - I do think this is a very essential tool for anyone who uses Google Slides to give presentations.
 
-## Other extensions
+## My other extensions
 
 [GitHub Diff Navigator](https://github.com/daattali/github-diff-navigator-extension) - Chrome extension that allows you to easily navigate through the changes in a file that has been edited on GitHub.
+
+[Project Free TV Ad Bypass](https://github.com/daattali/pftv-ad-bypass-extension) - Project Free TV serves a 10-second ad page before allowing users to continue to the video - this extension bypasses the ad page.
 
 [Smileyfy My Facebook](https://github.com/daattali/smileyfy-my-facebook-extension) - Chrome extension that adds infinite happiness to your Facebook browsing, plus a little bonus rickrolling :) 
 
