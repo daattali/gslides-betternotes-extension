@@ -9,7 +9,7 @@ var gsbnBackground = {
 		  // That fires when a page's URL contains a 'g' ...
 		  conditions: [
 			new chrome.declarativeContent.PageStateMatcher({
-			  pageUrl: { urlContains: 'docs.google.com/presentation' },
+			  pageUrl: { urlContains: 'docs.google.com/*/presentation' },
 			})
 		  ],
 		  // And shows the extension's page action.
