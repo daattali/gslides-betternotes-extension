@@ -32,6 +32,10 @@ As preparation for my committee meeting, I used Google Slides to make my present
 
 On a more serious note - I do think this is a very essential tool for anyone who uses Google Slides to give presentations.
 
+## Contributions
+
+Feel free to submit pull requests to help make this better or sent any feedback.  Thank you to [deafsquad](https://github.com/deafsquad) for making sure this works on Google work domains.
+
 ## My other extensions
 
 [GitHub Diff Navigator](https://github.com/daattali/github-diff-navigator-extension) - Chrome extension that allows you to easily navigate through the changes in a file that has been edited on GitHub.
