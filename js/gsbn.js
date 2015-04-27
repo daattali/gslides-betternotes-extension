@@ -5,7 +5,7 @@ var gsbn = {
       if (window.top.document.body.getAttribute("slide-resize-js") != null) {
         return;
       }
-      if (window.top.document.body.getAttribute("aria-label") != "Speaker Notes") {
+      if (window.top.document.body.getAttribute("aria-label") != "Vortragsnotizen" && window.top.document.body.getAttribute("aria-label") != "Speaker Notes") {
         return;
       }
       window.top.document.body.setAttribute("slide-resize-js", true);
