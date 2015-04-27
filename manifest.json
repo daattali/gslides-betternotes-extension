@@ -17,7 +17,7 @@
   },
   "permissions" : [
 	"declarativeContent",
-    "https://docs.google.com/presentation/*",
+    "https://docs.google.com/*/presentation/*",
     "storage"
   ],
   "icons": {
@@ -29,7 +29,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://docs.google.com/presentation/*/present*slide*"
+        "https://docs.google.com/*/presentation/*/present*slide*"
       ],
       "match_about_blank" : true,
       "all_frames" : true,
