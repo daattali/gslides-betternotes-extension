@@ -6,10 +6,9 @@ var gsbnBackground = {
 	  chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
 		// With a new rule ...
 		chrome.declarativeContent.onPageChanged.addRules([{
-		  // That fires when a page's URL contains a 'g' ...
-		  conditions: [
+    	  conditions: [
 			new chrome.declarativeContent.PageStateMatcher({
-			  pageUrl: { urlContains: 'docs.google.com/*/presentation' },
+			  pageUrl: { urlMatches: 'docs.google.com/[*/]?presentation' },
 			})
 		  ],
 		  // And shows the extension's page action.

@@ -2,16 +2,24 @@ var gsbn = {
 
     // init: add message listeners and call the appropriate function based on the request
     init : function() {
+
+      // If we already setup the resizing on this page, do nothing	
       if (window.top.document.body.getAttribute("slide-resize-js") != null) {
         return;
       }
-      if (window.top.document.body.getAttribute("aria-label") != "Vortragsnotizen" && window.top.document.body.getAttribute("aria-label") != "Speaker Notes") {
+	  
+	  // Make sure this is the Speaker Notes tab
+	  var i18n = [
+	    "Speaker Notes",    // English
+		"Vortragsnotizen"   // German
+	  ]	
+      if (i18n.indexOf(window.top.document.body.getAttribute("aria-label")) == -1) {
         return;
       }
+	  
       window.top.document.body.setAttribute("slide-resize-js", true);
-      console.log("added");
+
       var getOptsResp = function(opts) {
-      console.log(opts);
         if (opts.enabled) {
           var notesMaxWidth = parseInt(opts.notesMaxWidth) || gsbnCommon.defaultOpts.notesMaxWidth;
           gsbn.addJS(notesMaxWidth);
