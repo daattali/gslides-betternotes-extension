@@ -17,8 +17,8 @@
   },
   "permissions" : [
 	"declarativeContent",
-	"https://docs.google.com/presentation/*",   // personal Google docs
-    "https://docs.google.com/*/presentation/*", // Google docs for companies
+	"https://docs.google.com/presentation/*",  
+    "https://docs.google.com/*/presentation/*",
     "storage"
   ],
   "icons": {
