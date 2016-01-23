@@ -18,7 +18,7 @@ If you've ever used Google Slides (or MS PowerPoint/anything similar), you may b
 
 If you don't have a Google Slides document to experiment with/verify this problem, you can test it out with [this sample Google Slides presentation](https://docs.google.com/presentation/d/18svsKPFNQrBLOSAmOouD410kX9fuaNp3e1K1GTTBLiU/edit?usp=sharing)
 
-Here is a 30-second video that shows a demo of this extension:
+Here is a 40 second video that shows a demo of this extension:
 
 ![Demo](./img/doc/demo.gif)
 
