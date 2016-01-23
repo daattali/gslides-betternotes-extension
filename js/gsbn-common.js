@@ -1,6 +1,6 @@
 gsbnCommon = {
   defaultOpts : {
-    enabled : true,
+    autoResize : true,
     nextSlide : true,
     notesMaxWidth : 450  
   },
