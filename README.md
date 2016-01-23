@@ -1,7 +1,6 @@
 # Google Slides Auto Resize Speaker Notes (Chrome extension)
 
 _[Dean Attali](http://deanattali.com)_    
-_February-March 2015_    
 _Source code available [on GitHub](https://github.com/daattali/gslides-betternotes-extension)_     
 _Get the extension at the [Chrome Web Store](https://chrome.google.com/webstore/detail/google-slides-auto-resize/piciggpbidhfbpefjjbomcgomanjfbeb)_  
 
