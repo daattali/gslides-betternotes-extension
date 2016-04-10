@@ -13,12 +13,15 @@ var gsbn = {
 	  
 	    // Make sure this is the Speaker Notes tab
 	    var i18n = [
-	      "Speaker Notes",    // English
-        "Speaker notes",    // English (newer Chrome versions)
-		    "Vortragsnotizen"   // German
+	      "speaker%20notes",     // English
+              "vortragsnotizen",   // German
+              "notities%20van%20spreker",  // Dutch
+              "notas%20del%20orador",  // Spanish
+              "commentaires%20du%20pr%C3%A9sentateur",  // French
+              "%D7%94%D7%A2%D7%A8%D7%95%D7%AA%20%D7%93%D7%95%D7%91%D7%A8"  // Hebrew
 	    ]
       
-      if (i18n.indexOf(window.top.document.body.getAttribute("aria-label")) == -1) {
+      if (i18n.indexOf(encodeURI(window.top.document.body.getAttribute("aria-label").toLowerCase())) == -1) {
         return;
       }
 	  

@@ -1,6 +1,6 @@
 {
   "name": "Google Slides Auto Resize Speaker Notes",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "manifest_version": 2,
   "description": "Automatically resize the slide previews when the Speaker Notes window is resized, or drag the sidebar to manually select a size.",
   "page_action": {

@@ -22,6 +22,10 @@ Here is a 40 second video that shows a demo of this extension:
 
 ![Demo](./img/doc/demo.gif)
 
+## Supported languages
+
+This extension will work if your Chrome language is one of the following: English, French, Spanish, German, Dutch, Hebrew.  If you want me to add support for another language, please [open an issue](https://github.com/daattali/gslides-betternotes-extension/issues) on the project page.
+
 ## Motivation
 
 As preparation for my committee meeting, I used Google Slides to make my presentation. Shortly after starting, before havin any actual content in my presentation, I noticed that the Speaker Notes window is basically useless in its current form because of how small the slide previes are. After fiddling with the speaker notes window JavaScript and CSS for a couple hours, I decided that a much better use of my time instead of working on my committee meeting would be to make this extension. I then proceeded to spend the next several hours making the draft version of this extension, and thus successfully procrastinated from my real work for many many hours!
