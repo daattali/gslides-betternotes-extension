@@ -4,6 +4,8 @@ _[Dean Attali](http://deanattali.com)_
 _Source code available [on GitHub](https://github.com/daattali/gslides-betternotes-extension)_     
 _Get the extension at the [Chrome Web Store](https://chrome.google.com/webstore/detail/google-slides-auto-resize/piciggpbidhfbpefjjbomcgomanjfbeb)_  
 
+[Show your support :)](http://deanattali.com/aboutme#feeed-me)
+
 ## Installation
 
 Installation is extremely easy: just go to [the Chrome extension store](https://chrome.google.com/webstore/detail/google-slides-auto-resize/piciggpbidhfbpefjjbomcgomanjfbeb) and click on the "Add to Chrome" button.
