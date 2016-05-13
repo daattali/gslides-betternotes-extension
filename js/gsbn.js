@@ -12,16 +12,7 @@ var gsbn = {
       }
 	  
 	    // Make sure this is the Speaker Notes tab
-	    var i18n = [
-	      "speaker%20notes",     // English
-              "vortragsnotizen",   // German
-              "notities%20van%20spreker",  // Dutch
-              "notas%20del%20orador",  // Spanish
-              "commentaires%20du%20pr%C3%A9sentateur",  // French
-              "%D7%94%D7%A2%D7%A8%D7%95%D7%AA%20%D7%93%D7%95%D7%91%D7%A8"  // Hebrew
-	    ]
-      
-      if (!window.top.location.pathname.startsWith('/presentation/') && !window.top.location.pathname.endsWith('/present')) {
+      if (!window.top.location.pathname.startsWith('/presentation/') || !window.top.location.pathname.endsWith('/present')) {
         return;
       }
 	  
@@ -61,12 +52,12 @@ var gsbn = {
           sheet.insertRule(
             ".punch-viewer-speakernotes-text-body-scrollable { position: static !important; }",
             resizeSlidesRuleCount++);
-	  sheet.insertRule(
-	    ".punch-viewer-speaker-qanda-content { position: static !important; }",
-	    resizeSlidesRuleCount++);
-	  sheet.insertRule(
-	    ".punch-viewer-speaker-questions,.punch-viewer-speaker-series-list, .punch-viewer-speaker-series-intro-container, .punch-viewer-speaker-qanda-not-available { position: static !important; }",
-	    resizeSlidesRuleCount++);
+	        sheet.insertRule(
+	          ".punch-viewer-speaker-qanda-content { position: static !important; }",
+	          resizeSlidesRuleCount++);
+	        sheet.insertRule(
+	          ".punch-viewer-speaker-questions,.punch-viewer-speaker-series-list, .punch-viewer-speaker-series-intro-container, .punch-viewer-speaker-qanda-not-available { position: static !important; }",
+	          resizeSlidesRuleCount++);
           sheet.insertRule(
             ".punch-viewer-speakernotes-timer-panel { position: fixed !important; }",
             resizeSlidesRuleCount++);
