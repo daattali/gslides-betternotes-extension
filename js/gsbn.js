@@ -21,7 +21,7 @@ var gsbn = {
               "%D7%94%D7%A2%D7%A8%D7%95%D7%AA%20%D7%93%D7%95%D7%91%D7%A8"  // Hebrew
 	    ]
       
-      if (i18n.indexOf(encodeURI(window.top.document.body.getAttribute("aria-label").toLowerCase())) == -1) {
+      if (!window.top.location.pathname.startsWith('/presentation/') && !window.top.location.pathname.endsWith('/present')) {
         return;
       }
 	  
@@ -61,6 +61,12 @@ var gsbn = {
           sheet.insertRule(
             ".punch-viewer-speakernotes-text-body-scrollable { position: static !important; }",
             resizeSlidesRuleCount++);
+	  sheet.insertRule(
+	    ".punch-viewer-speaker-qanda-content { position: static !important; }",
+	    resizeSlidesRuleCount++);
+	  sheet.insertRule(
+	    ".punch-viewer-speaker-questions,.punch-viewer-speaker-series-list, .punch-viewer-speaker-series-intro-container, .punch-viewer-speaker-qanda-not-available { position: static !important; }",
+	    resizeSlidesRuleCount++);
           sheet.insertRule(
             ".punch-viewer-speakernotes-timer-panel { position: fixed !important; }",
             resizeSlidesRuleCount++);
