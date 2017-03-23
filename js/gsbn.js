@@ -67,7 +67,8 @@ var gsbn = {
           sheet.insertRule(
             "body[gsbn-dragging=true]{ cursor: e-resize; }",
             resizeSlidesRuleCount++);            
-            
+	  sheet.insertRule(
+	    "punch-viewer-speaker-empty-questions { position: static; }");
           // Resize the next slide
           if (opts.nextSlide) {
             sheet.insertRule(
