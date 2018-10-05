@@ -1,21 +1,21 @@
 var gsbn = {
-  
+
     slideWidth : null,
     dragging : false,
 
     // init: add message listeners and call the appropriate function based on the request
     init : function() {
-      
-      // If we already setup the resizing on this page, do nothing	
+
+      // If we already setup the resizing on this page, do nothing
       if (window.top.document.body.getAttribute("slide-resize-js") != null) {
         return;
       }
-	  
+
 	    // Make sure this is the Speaker Notes tab
       if (!window.top.location.pathname.startsWith('/presentation/') || !window.top.location.pathname.endsWith('/present')) {
         return;
       }
-	  
+
       window.top.document.body.setAttribute("slide-resize-js", true);
 
       var getOptsResp = function(opts) {
@@ -23,16 +23,16 @@ var gsbn = {
       }
       gsbn.getOptions(getOptsResp);
     },
-    
-    addJS : function(opts) {             
+
+    addJS : function(opts) {
         // Run this JavaScript code in the Speaker Notes window
         // (I'm on Chrome on Windows so I press F12 to bring up the Developer Tools, go to Console, and run it there)
         var notesMaxWidth = parseInt(opts.notesMaxWidth) || gsbnCommon.defaultOpts.notesMaxWidth;
-        var resizeSlidesRuleCount = 1;
-               
+        var resizeSlidesRuleCount = 0;
+
         // The core logic to resize the slides
         var resizeSlides = function() {
-          
+
           // Resize the current slide
           var fullWidth = window.top.innerWidth;
           if (gsbn.slideWidth === null) {
@@ -66,7 +66,7 @@ var gsbn = {
             resizeSlidesRuleCount++);
           sheet.insertRule(
             "body[gsbn-dragging=true]{ cursor: e-resize; }",
-            resizeSlidesRuleCount++);            
+            resizeSlidesRuleCount++);
 	  sheet.insertRule(
 	    ".punch-viewer-speaker-empty-questions { position: static !important; }",
         resizeSlidesRuleCount++);
@@ -74,8 +74,8 @@ var gsbn = {
           if (opts.nextSlide) {
             sheet.insertRule(
               ".punch-viewer-speakernotes-page-previous { vertical-align: top !important; }",
-              resizeSlidesRuleCount++);       
-              
+              resizeSlidesRuleCount++);
+
             var mainSlide = window.top.document.getElementsByClassName("punch-viewer-speakernotes-page-container")[0];
             var nextSlide = window.top.document.getElementsByClassName("punch-viewer-speakernotes-page-next")[0];
             var prevSlide = window.top.document.getElementsByClassName("punch-viewer-speakernotes-page-previous")[0];
@@ -106,20 +106,20 @@ var gsbn = {
             nextSlideIFrame.document.head.insertBefore(style, nextSlideIFrame.document.head.childNodes[0]);
           }
         };
-        
+
         // Resize on page load and whenever the window is resized
         if (opts.autoResize) {
           window.top.onresize = resizeSlides;
-          resizeSlides();  
+          resizeSlides();
         }
-        
+
         // Add a draggable element that allows the user to manually resize the windows
         var newItem = window.top.document.createElement("TD");
         newItem.setAttribute('id', 'gsbn-draggable');
         newItem.setAttribute('style', 'width: 5px; background: #666; cursor: e-resize; z-index: 10; position: relative;}');
         var mainPanel = window.top.document.getElementsByClassName("punch-viewer-speakernotes-main-panel")[0];
-        mainPanel.parentNode.insertBefore(newItem, mainPanel);        
-        
+        mainPanel.parentNode.insertBefore(newItem, mainPanel);
+
         window.top.document.getElementById("gsbn-draggable").addEventListener("mousedown", function(ev){
           gsbn.dragging = true;
           window.top.document.getElementsByTagName('body')[0].setAttribute('gsbn-dragging', true);
@@ -135,9 +135,9 @@ var gsbn = {
           if (!gsbn.dragging) return;
           gsbn.slideWidth = ev.clientX - mainSlidePaddings;
           resizeSlides();
-        });        
+        });
     },
-    
+
     getOptions : function(cb) {
       chrome.storage.sync.get(gsbnCommon.defaultOpts, cb);
     }
