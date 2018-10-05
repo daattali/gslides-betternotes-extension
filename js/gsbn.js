@@ -30,6 +30,14 @@ var gsbn = {
         var notesMaxWidth = parseInt(opts.notesMaxWidth) || gsbnCommon.defaultOpts.notesMaxWidth;
         var resizeSlidesRuleCount = 0;
 
+		// Move the timer to the right because it blocks a large portion of the slide preview
+		if (opts.timerRight) {
+		  var sheet = window.top.document.styleSheets[0];
+		  sheet.insertRule(
+		    ".punch-viewer-speakernotes-timer-panel { right: 0; width: auto !important;}",
+			resizeSlidesRuleCount++);
+		}
+		
         // The core logic to resize the slides
         var resizeSlides = function() {
 

@@ -15,6 +15,7 @@ var gsbnOptions = {
           document.getElementById('options-enabled').checked = items.autoResize;
           document.getElementById('options-next-slide').checked = items.nextSlide;
           document.getElementById('options-notes-width').value = items.notesMaxWidth;
+		  document.getElementById('options-timer-right').checked = items.timerRight;
         });
     },
     
@@ -23,11 +24,13 @@ var gsbnOptions = {
         var autoResize = document.getElementById('options-enabled').checked;
         var nextSlide = document.getElementById('options-next-slide').checked;
         var notesMaxWidth = document.getElementById('options-notes-width').value;
+		var timerRight = document.getElementById('options-timer-right').checked;
         
         chrome.storage.sync.set({
           autoResize : autoResize,
           nextSlide : nextSlide,
-          notesMaxWidth : notesMaxWidth
+          notesMaxWidth : notesMaxWidth,
+		  timerRight : timerRight
         });
 		
         if (location.href.indexOf("gsbn-popup") >= 0) {

@@ -27,6 +27,12 @@ Here is a 40 second video that shows a demo of this extension:
 
 ![Demo](./img/doc/demo.gif)
 
+## Extra features
+
+- Resizes thumbnail preview for the Next slide  
+- Ability to move the timer to the right because it sometimes takes up a large portion of the screen and hides some of the slide
+- Works in offline mode
+
 ## Supported languages
 
 This extension will work if your Chrome language is one of the following: English, French, Spanish, German, Dutch, Hebrew.  If you want me to add support for another language, please [open an issue](https://github.com/daattali/gslides-betternotes-extension/issues) on the project page.
