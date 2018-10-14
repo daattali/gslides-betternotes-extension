@@ -1,6 +1,6 @@
 # Google Slides Auto Resize Speaker Notes (Chrome extension)
 
-[![saythanks](http://i.imgur.com/L88apDa.png)](https://saythanks.io/to/daattali)
+[![Donate](https://i.imgur.com/vCIGFrH.png)](https://www.paypal.me/daattali/20)
 
 > *Copyright 2016 [Dean Attali](http://deanattali.com). Licensed under the MIT license.*
 
