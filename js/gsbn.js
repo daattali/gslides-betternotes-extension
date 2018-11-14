@@ -28,14 +28,13 @@ var gsbn = {
         // Run this JavaScript code in the Speaker Notes window
         // (I'm on Chrome on Windows so I press F12 to bring up the Developer Tools, go to Console, and run it there)
         var notesMaxWidth = parseInt(opts.notesMaxWidth) || gsbnCommon.defaultOpts.notesMaxWidth;
-        var resizeSlidesRuleCount = 0;
 
 		// Move the timer to the right because it blocks a large portion of the slide preview
 		if (opts.timerRight) {
 		  var sheet = window.top.document.styleSheets[0];
 		  sheet.insertRule(
 		    ".punch-viewer-speakernotes-timer-panel { right: 0; width: auto !important;}",
-			resizeSlidesRuleCount++);
+			sheet.rules.length);
 		}
 		
         // The core logic to resize the slides
@@ -56,33 +55,33 @@ var gsbn = {
             ".punch-viewer-speakernotes-page > svg {" +
             "  width: " + slideWidth + "px !important; " +
             "  height:auto !important;" +
-            "}", resizeSlidesRuleCount++);
+            "}", sheet.rules.length);
           sheet.insertRule(
             ".punch-viewer-speakernotes-text-body-scrollable { position: static !important; }",
-            resizeSlidesRuleCount++);
+            sheet.rules.length);
 	        sheet.insertRule(
 	          ".punch-viewer-speaker-qanda-content { position: static !important; }",
-	          resizeSlidesRuleCount++);
+	          sheet.rules.length);
 	        sheet.insertRule(
 	          ".punch-viewer-speaker-questions,.punch-viewer-speaker-series-list, .punch-viewer-speaker-series-intro-container, .punch-viewer-speaker-qanda-not-available { position: static !important; }",
-	          resizeSlidesRuleCount++);
+	          sheet.rules.length);
           sheet.insertRule(
             ".punch-viewer-speakernotes-timer-panel { position: fixed !important; }",
-            resizeSlidesRuleCount++);
+            sheet.rules.length);
           sheet.insertRule(
             ".punch-viewer-speakernotes-text-body-scrollable, .punch-viewer-speakernotes-base { height: 100% !important; }",
-            resizeSlidesRuleCount++);
+            sheet.rules.length);
           sheet.insertRule(
             "body[gsbn-dragging=true]{ cursor: e-resize; }",
-            resizeSlidesRuleCount++);
+            sheet.rules.length);
 	  sheet.insertRule(
 	    ".punch-viewer-speaker-empty-questions { position: static !important; }",
-        resizeSlidesRuleCount++);
+        sheet.rules.length);
           // Resize the next slide
           if (opts.nextSlide) {
             sheet.insertRule(
               ".punch-viewer-speakernotes-page-previous { vertical-align: top !important; }",
-              resizeSlidesRuleCount++);
+              sheet.rules.length);
 
             var mainSlide = window.top.document.getElementsByClassName("punch-viewer-speakernotes-page-container")[0];
             var nextSlide = window.top.document.getElementsByClassName("punch-viewer-speakernotes-page-next")[0];
@@ -99,7 +98,7 @@ var gsbn = {
               "  width: " + nextSlideWidth + "px !important;" +
               "  height: " + nextSlideHeight + "px !important;" +
               "}",
-              resizeSlidesRuleCount++
+              sheet.rules.length
             );
             var nextSlideIFrame = nextSlide.getElementsByTagName("iframe")[0].contentWindow;
             if (nextSlideIFrame.document.getElementById("gsbn-next-style") != null) {
