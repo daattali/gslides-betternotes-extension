@@ -49,6 +49,10 @@ var gsbn = {
           }
           var sheet = window.top.document.styleSheets[0];
           sheet.insertRule(
+            ".punch-viewer-speakernotes-dragger { display: none !important; }",
+            sheet.rules.length
+          );
+          sheet.insertRule(
             ".punch-viewer-speakernotes-side-panel," +
             ".punch-viewer-speakernotes-page-container," +
             ".punch-viewer-speakernotes-page," +
